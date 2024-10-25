@@ -1,0 +1,13 @@
+------------->
+Merhaba!
+
+localhost sunucusuna erişmek için
+dizindeki "server.bat" uygulamasını çalıştırın.
+ 
+ - Eğer bilgisayarda node.js kuruluysa 
+"Server başarı ile aktifleştirildi!" Uyarısı verir.
+ - Başarılı uyarıyı alınca yine aynı dizindeki
+"arayuzebaglan.bat" dosyasını çalıştırın.
+
+NOT: EĞER PC'DE node.js KURULU DEĞİLSE
+PROGRAM SİZE BUNU BİLDİRECEKTİR!

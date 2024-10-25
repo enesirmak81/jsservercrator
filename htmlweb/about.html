@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hakkımızda</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+        }
+        .bg-image {
+            background-image: url('/htmlweb/pexels-markusspiske-360591.jpg'); /* Resim URL'sini buraya ekleyin */
+            background-size: cover; /* Resmin alanı tamamen kaplamasını sağla */
+            background-position: center; /* Resmi ortala */
+            position: absolute; /* Konumlandırmayı sabit yap */
+            top: 0; /* Üstten sıfır mesafe */
+            bottom: 0; /* Alttan sıfır mesafe */
+            left: 0; /* Soldan sıfır mesafe */
+            right: 0; /* Sağdan sıfır mesafe */
+            z-index: -1; /* Arka planı diğer içeriklerin arkasına yerleştir */
+            filter: brightness(0.2);
+        }
+        .content {
+            position: relative; /* İçerik alanını konumlandır */
+            z-index: 1; /* İçeriği üstte göster */
+            color: white; /* Metin rengini beyaz yap */
+        }
+        .custom-navbar {
+            background-color: #5f5f5f;
+        }
+        @keyframes colorChange {
+            0% { color: #007bff; }
+            25% { color: #ff5733; }
+            50% { color: #ffc107; }
+            75% { color: #28a745; }
+            100% { color: #007bff; }
+        }
+
+        .custom-link {
+            transition: color 0.3s; /* Geçiş efekti */
+        }
+
+        .custom-link:hover {
+            animation: colorChange 1.2s infinite; /* Renk değişim animasyonu */
+        }
+    </style>
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg custom-navbar">
+        <div class="container flex-column text-center">
+            <a class="navbar-brand mb-2" href="#" style="letter-spacing: 20px;">SME SOFTWARE</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav" style="align-items: center;">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item" style="margin: 0 30px;"> 
+                        <a class="nav-link custom-link" href="http://localhost:9985/anasayfa">Ana Sayfa</a>
+                    </li>
+                    <li class="nav-item" style="margin: 0 30px;"> 
+                        <a class="nav-link custom-link" href="http://localhost:9985/iletisim">İletişim</a>
+                    </li>
+                    <li class="nav-item" style="margin: 0 30px;"> 
+                        <a class="nav-link custom-link" href="http://localhost:9985/girisyap">Giriş Yap</a>
+                    </li>
+                    <li class="nav-item" style="margin: 0 30px;"> 
+                        <a class="nav-link custom-link" href="http://localhost:9985/kayitol">Kaydol</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="bg-image"></div>
+    <div class="container mt-5 flex-grow-1 text-center text-warning">
+        <h1>Hakkımızda</h1>
+        <p>Biz, eğitim alanında en iyi içerikleri sunmak için buradayız.</p>
+    </div>
+
+    <footer class="bg-light text-center py-3">
+        <p>&copy; 2024 Eğitim Portalı. Tüm Hakları Saklıdır.</p>
+    </footer>
+</body>
+</html>
